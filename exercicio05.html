@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05 - Tarefa 02</title>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+
+    <p>Escreva código com JSX, diretamente em uma página HTML, para calcular o quadrado da
+        soma de três números inteiros.</p>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        var num1 = parseFloat(prompt("Informe o primeiro número"));
+        var num2 = parseFloat(prompt("Informe o segundo número"));
+        var num3 = parseFloat(prompt("Informe o terceiro número"));
+
+        const res =  <h2>O quadrado de {num1} + {num2} + {num3} é: {((num1 + num2 + num3) * 2)}</h2>
+
+        ReactDOM.render(res, document.getElementById("root"));
+    </script>
+
+</body>
+</html>
